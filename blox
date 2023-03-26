@@ -1,12 +1,12 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("DEATH OR LIFE hub", "Synapse")
+local Window = Library.CreateLib("DEATH OR LIFE hub", "BloodTheme")
 
 local Tab = Window:NewTab("Main")
 local Section = Tab:NewSection("farm")
 
 Section:NewToggle("Autofarm", ".", function(state)
     if state then
-        Player:Kick(testing)
+        Player:Kick("ERROR 4645")
     else
         print("Toggle Off")
     end
