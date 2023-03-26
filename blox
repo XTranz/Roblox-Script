@@ -47,6 +47,7 @@ local Tab = Window:NewTab("Settings")
 
 
 local Tab = Window:NewTab("Credits")
+local Section = Tab:NewSection("credits")
 Section:NewLabel("Made in vietnam")
 
 
