@@ -1,0 +1,52 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("DEATH OR LIFE hub", "Synapse")
+
+local Tab = Window:NewTab("Main")
+local Section = Tab:NewSection("farm")
+
+Section:NewToggle("Autofarm", ".", function(state)
+    if state then
+        Player:Kick(testing)
+    else
+        print("Toggle Off")
+    end
+end)
+
+
+
+
+
+local Tab = Window:NewTab("Automatics")
+local Section = Tab:NewSection("Sword")
+
+
+
+
+local Section = Tab:NewSection("Gun")
+
+
+
+
+
+local Tab = Window:NewTab("LocalPlayer")
+local Section = Tab:NewSection("main (kick or ban ricks)")
+
+Section:NewSlider("Walkspeed", "Info", 150, 20, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+Section:NewSlider("Jumpower", "Info", 150, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.Jumpower = s
+end)
+
+
+
+local Tab = Window:NewTab("Settings")
+
+
+
+
+local Tab = Window:NewTab("Credits")
+Section:NewLabel("Made in vietnam")
+
+
