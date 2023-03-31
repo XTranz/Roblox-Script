@@ -42,12 +42,9 @@ end)
 
 
 local Tab = Window:NewTab("Settings")
+local Section = Tab:NewSection("Setting Autofarm")
 
 
 
-
-local Tab = Window:NewTab("Credits")
-local Section = Tab:NewSection("credits")
-Section:NewLabel("Made in vietnam")
 
 
